@@ -1,0 +1,15 @@
+Server Sided and Client Sided | Full Documentation and Explaination
+
+Key-words:
+Server Sided: Where a 'Script' is run and executes on the public side only.
+Client Sided: Where a LocalScript is run and executes on the LocalPlayer only.
+Remote-Event: Where a event can be run and cause a function in codes (abusable).
+LocalScript: A script where the localplayer (you) can see the script acts.
+Script: A script where the public players (all) can see the script acts.
+Exploits: A software where exploiters can cheat in games.
+
+Full explanation:
+
+Server-sided or SS for short, means that the server can see 'it'. If you execute a script file into ROBLOX, it would be run into the Server where players can see the acts of the script. Server-sided is extremely dangerous as it can also destroy the creation of ROBLOX. If an exploiter gets his hands on Server-sided scripts or Server-sided remote events, he can eventually kick or ban players, delete parts, insert graphic content, or even shutdown the game itself. A Server-sided remote event can only be created when LoadstringEnabled() in ServerScriptService is enabled, and a script inside of ServerScriptService which calls loadstring() and eventually giving exploits access to the Server-sided execution. If you want to prevent all of this, make sure there is no events in ReplicatedStorage that calls loadstring() or any script that executes loadstring(). Exploiters can access the game's Server-sided edition by doing this code: game.ReplicatedStorage.EventLoadstring:FireServer("server-sided script") inside of the exploiters input. A Server-sided script will call a special ID number to execute the Server-sided script. This would be abusing the game, and eventually getting your game banned from the ROBLOX community.
+
+Client-sided is where only YOU can see the scripts. If you run a 'Kill All' script inside of ROBLOX, it will kill them, but since this is not Server-sided, the players won't see or get infected by the script. Client-sided is where most exploiters can execute their script into ROBLOX. Client-sided is good and bad at the same time, it is good because other players won't see the exploiters script. It might be good for them as well because they can grind or farm in a game. This would be cheating. Games can detect behavior inside of the client such as Script Execution. It is bad because games can easily detect the players activity, and thus getting you banned or kicked from the game. Client-sided is not the best in some cases, and Client-sided is run on 'LocalScripts' where the player is 'Local' and Script is script.
